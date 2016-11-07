@@ -5,26 +5,24 @@ $(document).ready(function(){
 
   $(".title").animate({left: "+=70%"}, 900);
 
+// Définition du scroll:
   var stp = $("html").scrollTop();
   $(".sthg").append("<p>Scrolltop:" + stp + "</p>");
+
 });
+
 
 // Scroll to the top!
-$(".scrollTop").click(function(){
-  $("html").animate({scrollTop: 0}, "slow");
-});
+  $(".scrollTop").click(function(){
+    $("html").animate({scrollTop: 0}, "slow");
+  });
+
 
 // Dev name slide:
-function traitement1(){
-  $(".devName").animate({"opacity": "1", "left": "+=50px"}, 500);
-}
-function traitement2(){
-  $(".devName").animate({"opacity": "0", "left": "-=50px"}, 500);
-}
-$(".dev").on({mouseenter:traitement1, mouseleave:traitement2});
-
-
-// Définition du scroll:
-$(".sthg").scroll(function(){
-  console.log("event's fired");
-});
+  function traitement1(){
+    $(".devName").animate({"opacity": "1", "left": "+=50px"}, 500);
+  }
+  function traitement2(){
+    $(".devName").animate({"opacity": "0", "left": "-=50px"}, 500);
+  }
+  $(".dev").on({mouseenter:traitement1, mouseleave:traitement2});
