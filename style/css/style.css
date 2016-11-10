@@ -13,9 +13,15 @@
 body {
   width: 100vw;
   overflow-x: hidden;
-  font-family: "sans"; }
+  font-family: "sans";
+  background-image: url(../../images/fjord.jpg);
+  background-attachment: fixed;
+  background-size: 100%; }
+  body p, body h1 {
+    margin: 0; }
 
 .scrollTop {
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,26 +44,25 @@ header {
   color: #ffffff;
   height: 100vh;
   width: 100vw;
-  background-image: url(../../images/fjord.jpg);
-  background-attachment: fixed;
-  background-size: 100%;
-  display: flex; }
+  display: flex;
+  border-bottom: 10px solid #607D8B; }
   header .title {
+    z-index: 1;
     text-align: center;
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: -40%;
     text-shadow: 0 0 1px #000000;
     font-size: 130px;
-    font-weight: 500;
-    margin-top: 0; }
+    font-weight: 500; }
 
 /*----- Navigation -----*/
 nav {
+  z-index: 3;
   display: none;
   height: 100px;
   width: 100%;
-  background-color: rgba(33, 150, 243, 0.2);
+  background-color: rgba(96, 125, 139, 0.2);
   position: fixed;
   top: 0;
   left: 0; }
@@ -73,8 +78,8 @@ nav {
         z-index: 1;
         opacity: 0;
         position: absolute;
-        top: 10px;
-        left: 100px;
+        top: 34px;
+        left: 40px;
         font-size: 35px;
         font-weight: 500; }
     nav .flex .dev {
@@ -118,15 +123,70 @@ nav {
         CARROUSEL
 \*---------- ----------*/
 .carrousel {
-  height: 100vh;
-  width: 400%; }
+  height: 50vh;
+  width: 25%;
+  z-index: 1;
+  position: absolute;
+  left: 38%;
+  bottom: -27%;
+  border: 10px solid #607D8B;
+  border-radius: 50%;
+  background-color: green;
+  overflow: hidden; }
+  .carrousel .imgCrsl {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%; }
+    .carrousel .imgCrsl ul {
+      height: 100%;
+      width: 400%;
+      padding: 0;
+      margin: 0;
+      list-style: none; }
+      .carrousel .imgCrsl ul li {
+        height: 100%;
+        width: 25%;
+        border-radius: 50%;
+        display: inline-block; }
+        .carrousel .imgCrsl ul li img {
+          border-radius: 50%;
+          width: 100%;
+          height: 100%; }
+  .carrousel .containerBtn {
+    z-index: 2;
+    position: absolute;
+    bottom: 10.5%;
+    left: 36%;
+    display: flex; }
+    .carrousel .containerBtn .roundBtn {
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      background-color: #000000;
+      opacity: 0.7;
+      margin: 0 5px;
+      -webkit-transition: -webkit- ease 0.2s;
+      -moz-transition: -moz- ease 0.2s;
+      -o-transition: -o- ease 0.2s;
+      -ms-transition: -ms- ease 0.2s;
+      transition: ease 0.2s; }
+      .carrousel .containerBtn .roundBtn:hover {
+        background-color: #bfbfbf;
+        cursor: pointer; }
 
 /*---------- ----------*\
         SOMETHING
 \*---------- ----------*/
 .sthg {
   height: 100vh;
+  width: 100vw; }
+
+/*---------- ----------*\
+        SOMETHING
+\*---------- ----------*/
+footer {
   width: 100vw;
-  background-color: #BBDEFB; }
+  height: 100vh;
+  background-color: #0288D1; }
 
 /*# sourceMappingURL=style.css.map */
