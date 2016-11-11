@@ -2,26 +2,37 @@
 $(document).ready(function(){
 
 $("nav, .dev").slideDown(400);
+$(".scrollTop").hide();
 
 
-// Scroll nav:
+
+//Vanish/show nav and scroll to the top!:
 
 $(window).scroll(function(){
 	posScroll = $(document).scrollTop();
-	if(posScroll >= 300)
-		$('nav, .dev').slideUp(400);
-	else
-		$('nav, .dev').slideDown(400);
+	if(posScroll >= 300){
+    $('nav, .dev').slideUp(400);
+    $(".scrollTop").fadeIn(200);
+  }
+	else{
+    $('nav, .dev').slideDown(400);
+    $(".scrollTop").fadeOut(200);
+  }
+
 });
+
+
 
 // Title slide:
   $(".title").animate({left: "+=68%"}, 900);
 
 
+
 // Définition du scroll:
 
   var stp = $("html").scrollTop();
-  $(".sthg").append("<p>Scrolltop:" + stp + "</p>");
+  $("footer").append("<p>Scrolltop:" + stp + "</p>");
+
 
 
 // Carrousel automatique:
@@ -33,6 +44,7 @@ $(window).scroll(function(){
 });
 
 
+
 // Scroll to the top!
 
 $(".scrollTop").click(function(){
@@ -40,6 +52,10 @@ $(".scrollTop").click(function(){
 });
 
 
+// Scroll to somethong !
+$(".sthgArrow").click(function(){
+  $("html").animate({scrollTop: 653}, "slow");
+});
 
 
 
@@ -54,4 +70,11 @@ function traitement2(){
 $(".dev").on({mouseenter:traitement1, mouseleave:traitement2});
 
 
+
 // Carrousel manuel:
+
+$("click1").click(function(){
+
+
+
+});

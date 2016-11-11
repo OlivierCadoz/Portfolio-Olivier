@@ -66,12 +66,16 @@
 body{
   width:100vw;
   overflow-x: hidden;
-  font-family: "sans";
+  font-family: "sans", sans-serif;
   background-image: url(../../images/fjord.jpg);
   background-attachment: fixed;
   background-size: 100%;
   p, h1{
     margin: 0;
+  }
+  h3{
+    color: #212121;
+    font-size: 4vh;
   }
 }
 
@@ -240,14 +244,14 @@ nav{
     // top: 0%;
     // left: 300%;
   }
-  /*.containerBtn{
+  .containerBtn{
     z-index: 2;
     position: absolute;
     bottom: 10%;
-    left: 35%;
+    left: 34%;
     display: flex;
     .roundBtn{
-      @include cercle(20px);
+      @include cercle(2.5vh);
       background-color: #000000;
       opacity: 0.7;
       margin: 0 5px;
@@ -257,7 +261,7 @@ nav{
         cursor: pointer;
       }
     }
-  }*/
+  }
 }
 
 
@@ -272,15 +276,48 @@ nav{
 .sthg{
   height: 100vh;
   width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 5px solid #BDBDBD;
+  .mymy{
+    height: 70vh;
+    width: 20vw;
+    padding: 0 2.5vw;
+    background-color: rgba(69, 90, 100, 01);
+    border-radius: 1%;
+    h3{
+      text-align: center;
+    }
+    p{
+      color: #FFFFFF;
+      font-size: 4vh;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
 }
 
 
 
 
 
-/*---------- ----------*\
-        SOMETHING
-\*---------- ----------*/
+/*----------  ----------*\
+          FOOTER
+\*----------  ----------*/
+.technos{
+  height: 100vh;
+  width: 100vw;
+}
+
+
+
+
+
+
+/*----------  ----------*\
+          FOOTER
+\*----------  ----------*/
 
 
 footer{
