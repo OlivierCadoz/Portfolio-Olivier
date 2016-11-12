@@ -8,6 +8,11 @@
   src: url('../../sanseriffic/Sanseriffic.otf');
 }
 
+@font-face {
+  font-family: "master";
+  src: url('../../master_of_break/master_of_break.otf');
+  src: url('../../master_of_break/master_of_break.ttf');
+}
 
 
 
@@ -77,6 +82,11 @@ body{
     color: #212121;
     font-size: 4vh;
   }
+}
+
+.sass{
+  font-family: "master", serif;
+  font-weight: lighter;
 }
 
 .scrollTop{
