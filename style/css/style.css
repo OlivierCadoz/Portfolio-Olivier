@@ -17,7 +17,7 @@ body {
   background-image: url(../../images/fjord.jpg);
   background-attachment: fixed;
   background-size: 100%; }
-  body p, body h1 {
+  body p, body h1, body h3 {
     margin: 0; }
   body h3 {
     color: #212121;
@@ -188,28 +188,114 @@ nav {
   width: 100vw;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  border-bottom: 5px solid #BDBDBD; }
+  align-items: flex-end; }
   .sthg .mymy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     height: 70vh;
     width: 20vw;
-    padding: 0 2.5vw;
+    padding: 2vh 2.5vw;
     background-color: #455a64;
     border-radius: 1%; }
     .sthg .mymy h3 {
       text-align: center; }
     .sthg .mymy p {
       color: #FFFFFF;
-      font-size: 4vh;
+      font-size: 3.5vh;
       font-weight: bold;
       text-align: center; }
 
-/*----------  ----------*\
-          FOOTER
-\*----------  ----------*/
+/*---------- ----------*\
+         TECHNOS
+\*---------- ----------*/
 .technos {
   height: 100vh;
-  width: 100vw; }
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  .technos .ctr {
+    height: 90%;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap; }
+  .technos .flex1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+    width: 40%; }
+    .technos .flex1 .style1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 48%;
+      width: 48%;
+      background-color: #607D8B; }
+    .technos .flex1 .style2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 48%;
+      width: 98%;
+      background-color: #CFD8DC; }
+  .technos .flex2 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+    width: 60%; }
+    .technos .flex2 .style3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 98%;
+      width: 30%;
+      background-color: #455A64; }
+    .technos .flex2 .style1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 48%;
+      width: 33%;
+      background-color: #CFD8DC; }
+  .technos .flex3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 32%;
+    width: 100%; }
+    .technos .flex3 .style1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 98%;
+      width: 19%;
+      background-color: #455A64; }
+    .technos .flex3 .style4 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 98%;
+      width: 59%;
+      background-color: #607D8B; }
+
+.rotate {
+  -webkit-transition: -webkit-transform 1.2s;
+  -moz-transition: -moz-transform 1.2s;
+  -o-transition: -o-transform 1.2s;
+  -ms-transition: -ms-transform 1.2s;
+  transition: transform 1.2s; }
+  .rotate:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); }
 
 /*----------  ----------*\
           FOOTER

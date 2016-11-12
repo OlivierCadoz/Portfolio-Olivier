@@ -70,7 +70,7 @@ body{
   background-image: url(../../images/fjord.jpg);
   background-attachment: fixed;
   background-size: 100%;
-  p, h1{
+  p, h1, h3{
     margin: 0;
   }
   h3{
@@ -222,28 +222,6 @@ nav{
       }
     }
   }
-
-  #img1{
-    // position: absolute;
-    // top: 0%;
-    // left: 0%;
-  }
-  #img2{
-
-    // position: absolute;
-    // top: 0%;
-    // left: 100%;
-  }
-  #img3{
-    // position: absolute;
-    // top: 0%;
-    // left: 200%;
-  }
-  #img4{
-    // position: absolute;
-    // top: 0%;
-    // left: 300%;
-  }
   .containerBtn{
     z-index: 2;
     position: absolute;
@@ -278,12 +256,14 @@ nav{
   width: 100vw;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  border-bottom: 5px solid #BDBDBD;
+  align-items: flex-end;
   .mymy{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     height: 70vh;
     width: 20vw;
-    padding: 0 2.5vw;
+    padding: 2vh 2.5vw;
     background-color: rgba(69, 90, 100, 01);
     border-radius: 1%;
     h3{
@@ -291,7 +271,7 @@ nav{
     }
     p{
       color: #FFFFFF;
-      font-size: 4vh;
+      font-size: 3.5vh;
       font-weight: bold;
       text-align: center;
     }
@@ -302,15 +282,96 @@ nav{
 
 
 
-/*----------  ----------*\
-          FOOTER
-\*----------  ----------*/
+/*---------- ----------*\
+         TECHNOS
+\*---------- ----------*/
 .technos{
   height: 100vh;
   width: 100vw;
+  @include flx-ctr;
+  flex-wrap: wrap;
+  .ctr {
+    height: 90%;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flex1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+    width: 40%;
+    .style1{
+      @include flx-ctr;
+      height: 48%;
+      width: 48%;
+      background-color: #607D8B;
+    }
+    .style2{
+      @include flx-ctr;
+      height: 48%;
+      width: 98%;
+      background-color: #CFD8DC;
+    }
+  }
+  .flex2{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+    width: 60%;
+    .style3{
+      @include flx-ctr;
+      height: 98%;
+      width: 30%;
+      background-color: #455A64;
+    }
+    .style1{
+      @include flx-ctr;
+      height: 48%;
+      width: 33%;
+      background-color: #CFD8DC;
+    }
+  }
+  .flex3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 32%;
+    width: 100%;
+    .style1{
+      @include flx-ctr;
+      height: 98%;
+      width: 19%;
+      background-color: #455A64;
+    }
+    .style4{
+      @include flx-ctr;
+      height: 98%;
+      width: 59%;
+      background-color: #607D8B;
+    }
+  }
+
 }
 
-
+.rotate{
+  -webkit-transition:-webkit-transform 1.2s;
+  -moz-transition:-moz-transform 1.2s;
+  -o-transition:-o-transform 1.2s;
+  -ms-transition:-ms-transform 1.2s;
+  transition:transform 1.2s;
+  &:hover{
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    transform:rotate(360deg);
+  }
+}
 
 
 

@@ -10,7 +10,7 @@ $(".scrollTop").hide();
 
 $(window).scroll(function(){
 	posScroll = $(document).scrollTop();
-	if(posScroll >= 300){
+	if(posScroll >= 500){
     $('nav, .dev').slideUp(400);
     $(".scrollTop").fadeIn(200);
   }
@@ -19,6 +19,22 @@ $(window).scroll(function(){
     $(".scrollTop").fadeOut(200);
   }
 
+});
+
+
+
+//A propos de moi moi show:
+
+$(".mymy").hide();
+
+$(window).scroll(function(){
+	posScroll = $(document).scrollTop();
+	if(posScroll >= 600){
+    $('.mymy').fadeIn(600);
+  }
+	else{
+    $('.mymy').fadeOut(400);
+  }
 });
 
 
@@ -52,7 +68,7 @@ $(".scrollTop").click(function(){
 });
 
 
-// Scroll to somethong !
+// Scroll to something !
 $(".sthgArrow").click(function(){
   $("html").animate({scrollTop: 653}, "slow");
 });
