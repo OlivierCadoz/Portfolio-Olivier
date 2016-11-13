@@ -50,7 +50,8 @@ body {
   opacity: 0.5;
   transition: linear 0.2s; }
   .scrollTop:hover {
-    opacity: 1; }
+    opacity: 1;
+    cursor: pointer; }
   .scrollTop i {
     font-size: 4vh; }
 
