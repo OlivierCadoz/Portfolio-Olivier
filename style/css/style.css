@@ -347,7 +347,8 @@ nav {
         margin-left: 1vw; }
       .fin footer ul a {
         color: #FFFDFB;
-        font-size: 3.5vh; }
+        font-size: 3.5vh;
+        transition: linear 0.2s; }
         .fin footer ul a:hover {
           text-decoration: underline; }
 
