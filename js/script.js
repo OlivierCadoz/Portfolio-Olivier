@@ -73,7 +73,7 @@ $(".scrollTop").click(function(){
 
 // Scroll to something !
 $("#apropos").click(function(){
-  $("html, body").animate({scrollTop: 641}, "slow");
+  $("html, body").animate({scrollTop: 651}, "slow");
 });
 
 
@@ -81,7 +81,7 @@ $("#apropos").click(function(){
 // Scroll to technos !
 
 $("#technos").click(function(){
-  $("html, body").animate({scrollTop: 1281}, "slow");
+  $("html, body").animate({scrollTop: 1291}, "slow");
 });
 
 
