@@ -75,6 +75,11 @@ body{
   background-image: url(../../images/fjord.jpg);
   background-attachment: fixed;
   background-size: 100%;
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
   p, h1, h3{
     margin: 0;
   }
@@ -118,7 +123,7 @@ body{
 
 header{
   color: #ffffff;
-  height: 100vh;
+  height: 98vh;
   width: 100vw;
   display: flex;
   border-bottom: 2vh solid #607D8B;
@@ -176,9 +181,6 @@ nav{
       justify-content: space-around;
       align-items: center;
       flex-grow: 1;
-      margin: 0;
-      padding: 0;
-      list-style: none;
       a{
         text-decoration: none;
         color: #ffffff;
@@ -386,13 +388,36 @@ nav{
 
 
 
-/*----------  ----------*\
-          FOOTER
-\*----------  ----------*/
+/*---------- ----------*\
+           FIN
+\*---------- ----------*/
 
 
-footer{
+.fin{
   width: 100vw;
   height: 100vh;
-  background-color: #0288D1;
+  .icon{
+    width: 100%;
+    height: 15vh;
+    background-color: #333333;
+    ul{
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    i{
+      margin: 0 10px;
+      color: #9E9E9E;
+      font-size: 7vh;
+      &:hover{
+        font-size: 8vh;
+      }
+    }
+  }
+  footer{
+    width: 100%;
+    height: 85vh;
+    background-color: #1f1f1f;
+  }
 }

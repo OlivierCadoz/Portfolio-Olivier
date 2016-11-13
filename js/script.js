@@ -69,8 +69,16 @@ $(".scrollTop").click(function(){
 
 
 // Scroll to something !
-$(".sthgArrow").click(function(){
-  $("html").animate({scrollTop: 653}, "slow");
+$("#apropos").click(function(){
+  $("html").animate({scrollTop: 641}, "slow");
+});
+
+
+
+// Scroll to technos !
+
+$("#technos").click(function(){
+  $("html").animate({scrollTop: 1281}, "slow");
 });
 
 
