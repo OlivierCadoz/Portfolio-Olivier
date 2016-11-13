@@ -25,11 +25,13 @@ body {
     margin: 0;
     padding: 0;
     list-style: none; }
-  body p, body h1, body h3 {
+  body p, body h1, body h3, body h4 {
     margin: 0; }
   body h3 {
     color: #212121;
     font-size: 4vh; }
+  body a {
+    text-decoration: none; }
 
 .sass {
   font-family: "master", serif;
@@ -129,7 +131,6 @@ nav {
       align-items: center;
       flex-grow: 1; }
       nav .flex ul a {
-        text-decoration: none;
         color: #ffffff;
         font-size: 4vh; }
         nav .flex ul a:hover {
@@ -156,8 +157,6 @@ nav {
     .carrousel .imgCrsl ul {
       height: 100%;
       width: 400%;
-      padding: 0;
-      margin: 0;
       list-style: none; }
       .carrousel .imgCrsl ul li {
         height: 100%;
@@ -331,6 +330,22 @@ nav {
   .fin footer {
     width: 100%;
     height: 85vh;
-    background-color: #1f1f1f; }
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around; }
+    .fin footer h4 {
+      color: #797979;
+      font-size: 5vh; }
+    .fin footer ul {
+      color: #797979;
+      list-style: square; }
+      .fin footer ul li {
+        margin-top: 2vh;
+        margin-left: 1vw; }
+      .fin footer ul a {
+        color: #FFFDFB;
+        font-size: 3.5vh; }
 
 /*# sourceMappingURL=style.css.map */
