@@ -46,8 +46,8 @@ $(window).scroll(function(){
 
 // Définition du scroll:
 
-  var stp = $("html").scrollTop();
-  $("footer").append("<p>Scrolltop:" + stp + "</p>");
+  // var stp = $("html").scrollTop();
+  // $("footer").append("<p>Scrolltop:" + stp + "</p>");
 
 
 
@@ -64,13 +64,13 @@ $(window).scroll(function(){
 // Scroll to the top!
 
 $(".scrollTop").click(function(){
-  $("html").animate({scrollTop: 0}, "slow");
+  $("html, body").animate({scrollTop: 0}, "slow");
 });
 
 
 // Scroll to something !
 $("#apropos").click(function(){
-  $("html").animate({scrollTop: 641}, "slow");
+  $("html, body").animate({scrollTop: 641}, "slow");
 });
 
 
@@ -78,7 +78,7 @@ $("#apropos").click(function(){
 // Scroll to technos !
 
 $("#technos").click(function(){
-  $("html").animate({scrollTop: 1281}, "slow");
+  $("html, body").animate({scrollTop: 1281}, "slow");
 });
 
 
