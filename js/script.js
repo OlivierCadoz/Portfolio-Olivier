@@ -64,7 +64,10 @@ $(window).scroll(function(){
 // Scroll to the top!
 
 $(".scrollTop").click(function(){
-  $("html, body").animate({scrollTop: 0}, "slow");
+	if ($(document).scrollTop() !== 0) {
+		$("html, body").animate({scrollTop: 0}, "slow");
+	}
+
 });
 
 
