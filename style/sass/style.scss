@@ -436,6 +436,9 @@ nav{
       a{
         color: #FFFDFB;
         font-size: 3.5vh;
+        &:hover{
+          text-decoration: underline;
+        }
       }
     }
 

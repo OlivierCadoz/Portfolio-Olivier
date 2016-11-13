@@ -347,5 +347,7 @@ nav {
       .fin footer ul a {
         color: #FFFDFB;
         font-size: 3.5vh; }
+        .fin footer ul a:hover {
+          text-decoration: underline; }
 
 /*# sourceMappingURL=style.css.map */
