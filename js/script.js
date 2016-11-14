@@ -40,7 +40,13 @@ $(window).scroll(function(){
 
 
 // Title slide:
-  $(".title").animate({left: "+=68%"}, 900);
+if ($("html").width() >= 980) {
+	$(".title").animate({marginLeft: "+=125vw"}, 900);
+}
+else if ($("html").width() <= 980) {
+	$(".title").animate({marginLeft: "+=110vw"}, 900);
+}
+
 
 
 
