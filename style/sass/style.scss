@@ -352,6 +352,38 @@ nav{
   }
 }
 
+@media screen and (min-width: 981px) {
+
+}
+
+@media screen and (min-width: 362px) and (max-width: 980px) {
+  .sthg{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    .mymy{
+      margin: 0;
+      width: 40vw;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .sthg{
+    height: 200vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    .mymy{
+      margin-top: 10vh;
+      width: 80vw;
+    }
+  }
+}
+
 
 
 

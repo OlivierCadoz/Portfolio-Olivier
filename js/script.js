@@ -40,10 +40,13 @@ $(window).scroll(function(){
 
 
 // Title slide:
-if ($("html").width() >= 980) {
+if ($("html").width() >= 981) {
 	$(".title").animate({marginLeft: "+=124vw"}, 900);
 }
-else if ($("html").width() <= 980) {
+else if (361 <= $("html").width() <= 980) {
+	$(".title").animate({marginLeft: "+=108.5vw"}, 900);
+}
+else if ($("html").width() <= 360) {
 	$(".title").animate({marginLeft: "+=110vw"}, 900);
 }
 
@@ -95,19 +98,25 @@ $("#technos").click(function(){
 // Dev name slide:
 
 function traitement1(){
-	if ($("html").width() >= 980) {
+	if ($("html").width() >= 981) {
 		$(".devName").animate({"opacity": "1", "left": "+=6vw"}, 400);
 	}
-	else if ($("html").width() <= 980) {
+	else if (361 <= $("html").width() <= 980) {
+		$(".devName").animate({"opacity": "1", "left": "+=30vw"}, 400);
+	}
+	else if ($("html").width() <= 360) {
 		$(".devName").animate({"opacity": "1", "left": "+=30vw"}, 400);
 	}
 
 }
 function traitement2(){
-	if ($("html").width() >= 980) {
+	if ($("html").width() >= 981) {
 		$(".devName").animate({"opacity": "0", "left": "-=6vw"}, 400);
 	}
-	else if ($("html").width() <= 980) {
+	else if (361 <= $("html").width() <= 980) {
+		$(".devName").animate({"opacity": "0", "left": "-=30vw"}, 400);
+	}
+	else if ($("html").width() <= 360) {
 		$(".devName").animate({"opacity": "0", "left": "-=30vw"}, 400);
 	}
 }
