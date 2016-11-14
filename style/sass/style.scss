@@ -395,10 +395,9 @@ nav{
   height: 100vh;
   width: 100vw;
   @include flx-ctr;
-  flex-wrap: wrap;
+
   .ctr {
-    height: 90%;
-    width: 75%;
+    height: 90vh;
     display: flex;
     flex-wrap: wrap;
   }
@@ -488,6 +487,25 @@ nav{
   }
 }
 
+@media screen and (min-width: 981px) {
+  .ctr{
+    width: 76vw;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .ctr{
+    width: 99vw;
+    justify-content: center;
+    .flex1, .flex2, .flex3{
+      height: 30vh;
+      width: 100vw;
+    }
+  }
+}
+
+
+
 
 
 
@@ -546,5 +564,14 @@ nav{
       }
     }
 
+  }
+}
+
+
+
+
+@media screen and (max-width: 980px) {
+  footer{
+    flex-direction: column;
   }
 }

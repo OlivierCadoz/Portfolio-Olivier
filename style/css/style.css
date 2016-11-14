@@ -253,11 +253,9 @@ nav {
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; }
+  align-items: center; }
   .technos .ctr {
-    height: 90%;
-    width: 75%;
+    height: 90vh;
     display: flex;
     flex-wrap: wrap; }
   .technos .flex1 {
@@ -342,6 +340,16 @@ nav {
     -ms-transform: rotate(360deg);
     transform: rotate(360deg); }
 
+@media screen and (min-width: 981px) {
+  .ctr {
+    width: 76vw; } }
+@media screen and (max-width: 980px) {
+  .ctr {
+    width: 99vw;
+    justify-content: center; }
+    .ctr .flex1, .ctr .flex2, .ctr .flex3 {
+      height: 30vh;
+      width: 100vw; } }
 /*---------- ----------*\
            FIN
 \*---------- ----------*/
@@ -387,5 +395,9 @@ nav {
         transition: linear 0.2s; }
         .fin footer ul a:hover {
           text-decoration: underline; }
+
+@media screen and (max-width: 980px) {
+  footer {
+    flex-direction: column; } }
 
 /*# sourceMappingURL=style.css.map */
