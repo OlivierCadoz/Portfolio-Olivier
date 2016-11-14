@@ -10,7 +10,7 @@ $(".scrollTop").hide();
 
 $(window).scroll(function(){
 	posScroll = $(document).scrollTop();
-	if(posScroll >= 500){
+	if(posScroll >= $(".title").offset().top){
     $('nav, .dev').slideUp(400);
     $(".scrollTop").fadeIn(200);
   }
@@ -29,7 +29,7 @@ $(".mymy").hide();
 
 $(window).scroll(function(){
 	posScroll = $(document).scrollTop();
-	if(posScroll >= 600){
+	if(posScroll >= $(".carrousel").offset().top){
     $('.mymy').fadeIn(600);
   }
 	else{
@@ -73,7 +73,7 @@ $(".scrollTop").click(function(){
 
 // Scroll to something !
 $("#apropos").click(function(){
-  $("html, body").animate({scrollTop: 651}, "slow");
+  $("html, body").animate({scrollTop: $(".sthg").offset().top}, "slow");
 });
 
 
@@ -81,7 +81,7 @@ $("#apropos").click(function(){
 // Scroll to technos !
 
 $("#technos").click(function(){
-  $("html, body").animate({scrollTop: 1291}, "slow");
+  $("html, body").animate({scrollTop: $(".technos").offset().top}, "slow");
 });
 
 
