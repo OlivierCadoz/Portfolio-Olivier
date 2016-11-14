@@ -158,12 +158,10 @@ nav {
         CARROUSEL
 \*---------- ----------*/
 .carrousel {
-  height: 50vh;
-  width: 25vw;
   z-index: 1;
   position: absolute;
-  left: 38vw;
-  bottom: -27%;
+  left: 36vw;
+  bottom: -26vh;
   border: 2vh solid #607D8B;
   border-radius: 50%;
   background-color: rgba(96, 125, 139, 0);
@@ -185,28 +183,22 @@ nav {
           height: 100%;
           width: 100%;
           border-radius: 50%; }
-  .carrousel .containerBtn {
-    z-index: 2;
-    position: absolute;
-    bottom: 10%;
-    left: 34%;
-    display: flex; }
-    .carrousel .containerBtn .roundBtn {
-      border-radius: 50%;
-      width: 2.5vh;
-      height: 2.5vh;
-      background-color: #000000;
-      opacity: 0.7;
-      margin: 0 5px;
-      -webkit-transition: -webkit- ease 0.2s;
-      -moz-transition: -moz- ease 0.2s;
-      -o-transition: -o- ease 0.2s;
-      -ms-transition: -ms- ease 0.2s;
-      transition: ease 0.2s; }
-      .carrousel .containerBtn .roundBtn:hover {
-        background-color: #bfbfbf;
-        cursor: pointer; }
 
+@media screen and (min-width: 981px) {
+  .carrousel {
+    height: 50vh;
+    width: 25vw; } }
+@media screen and (min-width: 362px) and (max-width: 980px) {
+  .carrousel {
+    height: 35vh;
+    width: 50vw;
+    bottom: -18.5vh;
+    left: 24vw; } }
+@media screen and (max-width: 360px) {
+  .carrousel {
+    height: 50vh;
+    width: 85vw;
+    left: 5vw; } }
 /*---------- ----------*\
         SOMETHING
 \*---------- ----------*/
