@@ -93,6 +93,14 @@ body{
   }
 }
 
+@media screen and (max-width: 980px) {
+    body{
+      background-image: url(../../images/fjord.jpg);
+      background-size: cover;
+    }
+}
+
+
 .sass{
   font-family: "master", serif;
   font-weight: lighter;
@@ -180,9 +188,6 @@ nav{
       .devName{
         z-index: 1;
         opacity: 0;
-        position: absolute;
-        top: 5vh;
-        left: 3vw;
         font-size: 5vh;
         font-weight: 500;
       }
@@ -191,7 +196,6 @@ nav{
       z-index: 2;
       display: none;
       margin: 2vh 3vw;
-      @include cercle(10vh);
       @include rotation;
     }
     ul{
@@ -218,6 +222,35 @@ nav{
       }
     }
   }
+  .devName{
+    position: absolute;
+    top: 5vh;
+    left: 3vw;
+  }
+  .dev{
+    @include cercle(10vh);
+  }
+}
+
+@media screen and (min-width: 361px) and (max-width: 980px) {
+  nav{
+    background-color: rgba(96, 125, 139, 0.5);
+    height: 20vh;
+    ul{
+      a{
+        font-size: 5vh;
+        font-weight:  normal;
+      }
+    }
+  }
+  .devName{
+    position: absolute;
+    top: 3vh;
+    left: 3vw;
+  }
+  .dev{
+    @include cercle(6vh);
+  }
 }
 
 @media screen and (max-width: 980px) {
@@ -231,8 +264,15 @@ nav{
       }
     }
   }
+  .devName{
+    position: absolute;
+    top: 5vh;
+    left: 3vw;
+  }
+  .dev{
+    @include cercle(10vh);
+  }
 }
-
 
 
 
@@ -266,7 +306,6 @@ nav{
         img{
           height: 100%;
           width: 100%;
-          border-radius: 50%;
         }
       }
     }

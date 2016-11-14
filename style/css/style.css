@@ -34,6 +34,10 @@ body {
   body a {
     text-decoration: none; }
 
+@media screen and (max-width: 980px) {
+  body {
+    background-image: url(../../images/fjord.jpg);
+    background-size: cover; } }
 .sass {
   font-family: "master", serif;
   font-weight: lighter; }
@@ -105,18 +109,12 @@ nav {
       nav .flex .half .devName {
         z-index: 1;
         opacity: 0;
-        position: absolute;
-        top: 5vh;
-        left: 3vw;
         font-size: 5vh;
         font-weight: 500; }
     nav .flex .dev {
       z-index: 2;
       display: none;
       margin: 2vh 3vw;
-      border-radius: 50%;
-      width: 10vh;
-      height: 10vh;
       -moz-box-shadow: 0px 0px 5px 2px #ffffff;
       -webkit-box-shadow: 0px 0px 5px 2px #ffffff;
       -o-box-shadow: 0px 0px 5px 2px #ffffff;
@@ -146,14 +144,51 @@ nav {
   nav {
     background-color: rgba(96, 125, 139, 0.2); }
     nav ul a {
-      font-size: 4vh; } }
+      font-size: 4vh; }
+
+  .devName {
+    position: absolute;
+    top: 5vh;
+    left: 3vw; }
+
+  .dev {
+    border-radius: 50%;
+    width: 10vh;
+    height: 10vh; } }
+@media screen and (min-width: 361px) and (max-width: 980px) {
+  nav {
+    background-color: rgba(96, 125, 139, 0.5);
+    height: 20vh; }
+    nav ul a {
+      font-size: 5vh;
+      font-weight: normal; }
+
+  .devName {
+    position: absolute;
+    top: 3vh;
+    left: 3vw; }
+
+  .dev {
+    border-radius: 50%;
+    width: 6vh;
+    height: 6vh; } }
 @media screen and (max-width: 980px) {
   nav {
     background-color: rgba(96, 125, 139, 0.5);
     height: 20vh; }
     nav ul a {
       font-size: 5vh;
-      font-weight: normal; } }
+      font-weight: normal; }
+
+  .devName {
+    position: absolute;
+    top: 5vh;
+    left: 3vw; }
+
+  .dev {
+    border-radius: 50%;
+    width: 10vh;
+    height: 10vh; } }
 /*---------- ----------*\
         CARROUSEL
 \*---------- ----------*/
@@ -181,8 +216,7 @@ nav {
         display: inline-block; }
         .carrousel .imgCrsl ul li img {
           height: 100%;
-          width: 100%;
-          border-radius: 50%; }
+          width: 100%; }
 
 @media screen and (min-width: 981px) {
   .carrousel {
