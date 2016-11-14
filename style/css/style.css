@@ -193,7 +193,7 @@ nav {
     height: 35vh;
     width: 50vw;
     bottom: -18.5vh;
-    left: 24vw; } }
+    left: 22.5vw; } }
 @media screen and (max-width: 360px) {
   .carrousel {
     height: 50vh;
@@ -225,17 +225,17 @@ nav {
       font-weight: bold;
       text-align: center; }
 
-@media screen and (min-width: 362px) and (max-width: 980px) {
+@media screen and (min-width: 361px) and (max-width: 980px) {
   .sthg {
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-end;
     height: 100vh;
-    margin: 0; }
+    margin-top: 5vh; }
     .sthg .mymy {
-      margin: 0;
+      height: 80vh;
       width: 40vw; } }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 360px) {
   .sthg {
     height: 200vh;
     flex-direction: column;
