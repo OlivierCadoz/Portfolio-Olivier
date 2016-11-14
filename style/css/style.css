@@ -79,6 +79,9 @@ header {
   .title {
     font-size: 10vw; } }
 @media screen and (max-width: 980px) {
+  .flex {
+    flex-direction: column; }
+
   .title {
     font-size: 16vw; } }
 /*----- Navigation -----*/
@@ -87,7 +90,6 @@ nav {
   display: none;
   height: 14vh;
   width: 100%;
-  background-color: rgba(96, 125, 139, 0.2);
   position: fixed;
   top: 0;
   left: 0; }
@@ -136,11 +138,22 @@ nav {
       align-items: center;
       flex-grow: 1; }
       nav .flex ul a {
-        color: #ffffff;
-        font-size: 4vh; }
+        color: #ffffff; }
         nav .flex ul a:hover {
           text-shadow: 0 0 0.3px #ffffff; }
 
+@media screen and (min-width: 981px) {
+  nav {
+    background-color: rgba(96, 125, 139, 0.2); }
+    nav ul a {
+      font-size: 4vh; } }
+@media screen and (max-width: 980px) {
+  nav {
+    background-color: rgba(96, 125, 139, 0.5);
+    height: 20vh; }
+    nav ul a {
+      font-size: 5vh;
+      font-weight: normal; } }
 /*---------- ----------*\
         CARROUSEL
 \*---------- ----------*/

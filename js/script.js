@@ -95,10 +95,21 @@ $("#technos").click(function(){
 // Dev name slide:
 
 function traitement1(){
-  $(".devName").animate({"opacity": "1", "left": "+=6vw"}, 400);
+	if ($("html").width() >= 980) {
+		$(".devName").animate({"opacity": "1", "left": "+=6vw"}, 400);
+	}
+	else if ($("html").width() <= 980) {
+		$(".devName").animate({"opacity": "1", "left": "+=30vw"}, 400);
+	}
+
 }
 function traitement2(){
-  $(".devName").animate({"opacity": "0", "left": "-=6vw"}, 400);
+	if ($("html").width() >= 980) {
+		$(".devName").animate({"opacity": "0", "left": "-=6vw"}, 400);
+	}
+	else if ($("html").width() <= 980) {
+		$(".devName").animate({"opacity": "0", "left": "-=30vw"}, 400);
+	}
 }
 $(".dev").on({mouseenter:traitement1, mouseleave:traitement2});
 
