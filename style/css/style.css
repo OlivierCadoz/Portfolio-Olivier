@@ -216,7 +216,8 @@ nav {
         display: inline-block; }
         .carrousel .imgCrsl ul li img {
           height: 100%;
-          width: 100%; }
+          width: 100%;
+          border-right: 1vw solid #333333; }
 
 @media screen and (min-width: 981px) {
   .carrousel {
