@@ -42,7 +42,7 @@ $(window).scroll(function(){
 
 // Title slide:
 if ($("html").width() >= 981) {
-	$(".title").animate({marginLeft: "+=124vw"}, 900);
+	$(".title").animate({marginLeft: "+=128vw"}, 900);
 }
 else if (361 <= $("html").width() <= 980) {
 	$(".title").animate({marginLeft: "+=108.5vw"}, 900);
