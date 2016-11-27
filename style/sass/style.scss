@@ -177,6 +177,7 @@ nav{
   top: 0;
   left: 0;
   .flex{
+    height: 100%;
     display: flex;
     justify-content: space-between;
     .half{
@@ -375,7 +376,7 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 70vh;
+    min-height: 70vh;
     width: 20vw;
     padding: 2vh 2.5vw;
     background-color: rgba(69, 90, 100, 01);
@@ -386,7 +387,7 @@ nav{
     p{
       color: #FFFFFF;
       font-size: 3.5vh;
-      font-weight: bold;
+      font-weight: normal;
       text-align: center;
     }
   }

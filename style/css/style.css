@@ -98,6 +98,7 @@ nav {
   top: 0;
   left: 0; }
   nav .flex {
+    height: 100%;
     display: flex;
     justify-content: space-between; }
     nav .flex .half {
@@ -247,7 +248,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 70vh;
+    min-height: 70vh;
     width: 20vw;
     padding: 2vh 2.5vw;
     background-color: #455a64;
@@ -257,7 +258,7 @@ nav {
     .sthg .mymy p {
       color: #FFFFFF;
       font-size: 3.5vh;
-      font-weight: bold;
+      font-weight: normal;
       text-align: center; }
 
 @media screen and (min-width: 361px) and (max-width: 980px) {

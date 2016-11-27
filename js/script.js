@@ -1,9 +1,8 @@
 
 $(document).ready(function(){
 
-$("nav, .dev").slideDown(400);
+$("nav, .dev").slideDown(800);
 $(".scrollTop").hide();
-
 
 
 //Vanish/show nav and scroll to the top!:
@@ -11,11 +10,13 @@ $(".scrollTop").hide();
 $(window).scroll(function(){
 	posScroll = $(document).scrollTop();
 	if(posScroll >= $(".title").offset().top){
-    $('nav, .dev').slideUp(400);
+		$('.dev').slideUp(200);
+		$('nav').stop().animate({"height": "8vh"}, 200);
     $(".scrollTop").fadeIn(200);
   }
 	else{
-    $('nav, .dev').slideDown(400);
+		$('.dev').slideDown(200);
+		$('nav').stop().animate({"height": "14vh"}, 200);
     $(".scrollTop").fadeOut(200);
   }
 
