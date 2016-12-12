@@ -1,5 +1,5 @@
-/*----------  ----------*          MIXINS
-\*----------  ----------*/
+/*---------- ----------*        FONT-FACE
+\*---------- ----------*/
 @font-face {
   font-family: 'sans';
 
@@ -17,6 +17,17 @@
 \*----------  ----------*/
 /*----------  ----------*           Body
 \*----------  ----------*/
+*::-moz-selection {
+  color: #ff5252;
+  background-color: #607d8b;
+  text-shadow: 0 0 0 1px #000;
+}
+*::selection {
+  color: #ff5252;
+  background-color: #607d8b;
+  text-shadow: 0 0 0 1px #000;
+}
+
 body {
   font-family: 'sans', sans-serif;
   overflow-x: hidden;
