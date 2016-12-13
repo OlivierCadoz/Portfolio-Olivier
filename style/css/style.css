@@ -20,19 +20,19 @@
 *::-moz-selection {
   color: #ff5252;
   background-color: #607d8b;
-  text-shadow: 0 0 0 1px #000;
+  text-shadow: 0 0 1px #000;
 }
 *::selection {
   color: #ff5252;
   background-color: #607d8b;
-  text-shadow: 0 0 0 1px #000;
+  text-shadow: 0 0 1px #000;
 }
 
 body {
   font-family: 'sans', sans-serif;
   overflow-x: hidden;
   width: 100vw;
-  background-image: url(../../images/fjord.jpg);
+  background-image: url(../../images/img/fjord.jpg);
   background-attachment: fixed;
   background-size: 100%;
 }
@@ -369,7 +369,7 @@ nav .flex ul a:hover {
   display: -ms-flexbox;
   display: flex;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: end;
@@ -381,6 +381,7 @@ nav .flex ul a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

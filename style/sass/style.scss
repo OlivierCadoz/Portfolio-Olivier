@@ -72,7 +72,7 @@
 
 *::selection{
   color: rgb(255, 82, 82);
-  text-shadow: 0 0 0 1px #000;
+  text-shadow: 0 0 1px #000;
   background-color: #607D8B;
 }
 
@@ -80,7 +80,7 @@ body{
   width:100vw;
   overflow-x: hidden;
   font-family: "sans", sans-serif;
-  background-image: url(../../images/fjord.jpg);
+  background-image: url(../../images/img/fjord.jpg);
   background-attachment: fixed;
   background-size: 100%;
   ul{
@@ -375,7 +375,7 @@ nav{
 
 
 .sthg{
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: space-around;
@@ -389,6 +389,7 @@ nav{
     padding: 2vh 2.5vw;
     background-color: rgba(69, 90, 100, 01);
     border-radius: 1%;
+    overflow: hidden;
     h3{
       text-align: center;
     }

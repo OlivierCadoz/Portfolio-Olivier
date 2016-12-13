@@ -9,8 +9,10 @@ var plugins = require('gulp-load-plugins')();
 // Variables de chemin:
 var srcCss = './style';
 var srcJs = './js';
+var srcImg = './images';
 var destCss = './style';
 var destJs = './js';
+var destImg = './images';
 
 
 // TÂCHES:
@@ -35,10 +37,24 @@ gulp.task('minify', function(){
 });
 
 
-// -Minification des styles css
+// -Minification du js:
 gulp.task('uglify', function(){
   gulp.src(srcJs + '/js/*.js')
   .pipe(plugins.uglify())
   .pipe(plugins.rename({suffix:'.min'}))
   .pipe(gulp.dest(destJs + '/min'));
+});
+
+
+// -Minification des images:
+gulp.task('minimg', function(){
+  return gulp.src(srcImg + '/img/*.{png,jpg,jpeg,gif,svg}')
+  .pipe(plugins.imagemin())
+  .pipe(gulp.dest(destImg + '/imgmin'));
+});
+
+
+// Watch les changements de css:
+gulp.task('watch', function(){
+  gulp.watch(srcCss + '/sass/*.scss', ['css']);
 });
