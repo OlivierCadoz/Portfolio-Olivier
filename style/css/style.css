@@ -32,7 +32,7 @@ body {
   font-family: 'sans', sans-serif;
   overflow-x: hidden;
   width: 100vw;
-  background-image: url(../../images/img/fjord.jpg);
+  background-image: url('../../images/img/fjord.jpg');
   background-attachment: fixed;
   background-size: 100%;
 }
@@ -63,7 +63,7 @@ body a {
 
 @media screen and (max-width: 980px) {
   body {
-    background-image: url(../../images/fjord.jpg);
+    background-image: url('../../images/img/fjord.jpg');
     background-size: cover;
   }
 }
