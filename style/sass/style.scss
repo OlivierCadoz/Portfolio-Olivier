@@ -100,8 +100,11 @@ body{
 }
 
 @media screen and (min-width: 981px) {
-  background-attachment: fixed;
-  background-size: 100%;
+  body{
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
 }
 
 @media screen and (max-width: 980px) {
